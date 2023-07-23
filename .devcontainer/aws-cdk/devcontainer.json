@@ -1,0 +1,26 @@
+{
+	"name": "aws-cdk",
+
+	"image": "ghcr.io/isaacsancheza/images:aws-cdk",
+
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+
+	"workspaceFolder": "/workspace",
+
+	"remoteUser": "codespace",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.autopep8",
+				"ms-python.vscode-pylance",
+				"AmazonWebServices.aws-toolkit-vscode"			
+			]
+		}
+	}
+}
