@@ -1,7 +1,7 @@
 {
-	"name": "aws-tailwind",
+	"name": "aws-cdk",
 
-	"image": "ghcr.io/isaacsancheza/images:aws-node18",
+	"image": "ghcr.io/isaacsancheza/images:aws-cdk",
 
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 
@@ -9,11 +9,17 @@
 
 	"remoteUser": "codespace",
 
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"esbenp.prettier-vscode",
-				"bradlc.vscode-tailwindcss",
+				"ms-python.python",
+				"ms-python.autopep8",
+				"Boto3typed.boto3-ide",
+				"ms-python.vscode-pylance",
 				"AmazonWebServices.aws-toolkit-vscode"
 			]
 		}
