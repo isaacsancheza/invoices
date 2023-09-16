@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+lxml = "*"
+requests = "*"
+cfdi = {git = "https://github.com/isaacsancheza/cfdi"}
+
+[dev-packages]
+autopep8 = "*"
+pytest = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.10"
